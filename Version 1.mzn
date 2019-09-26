@@ -10,17 +10,16 @@ array[Limitations] of int: capacity;
 % units of each limitation required to visit 1 place
 array[Places, Limitations] of int: consumption;
  
-% Variables: how much should we make of each product
+% Is Place visited or not
 array[Places] of var 0..1: visited;
+% how much of bugdet and time is used
 array[Limitations] of var 0..max(capacity): used;
 
-% Production cannot use more than the available Resources:
+% Cannot use more than the available Budget and Time:
 constraint forall (l in Limitations) (     
       used[l] = sum (p in Places)(consumption[p, l] * visited[p]) 
 );
 
-constraint forall (p in Places) (visited[p]<=1); 
-constraint forall (p in Places) (visited[p]>=0);
 constraint forall (l in Limitations) (     
       used[l] <= capacity[l]
 );    
