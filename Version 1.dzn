@@ -1,0 +1,14 @@
+Places = { Ahsan_Manjil, Lalbagh_Fort, Jatiya_Shangshad_Bhaban, Star_Mosque, Dhakeshwari_Temple, Shishu_Park,Shahid_Minar, Baitul_Mukarram_National_Mosque };
+satisfaction = [100,200,232,400,356,700,563,900]; 
+
+Limitations = { Budget,Time };
+capacity = [1000,16];
+
+consumption = [| 50, 3
+              | 72, 5
+              | 32, 1
+              | 10, 1
+              | 56, 4
+              | 66, 2
+              | 79, 1
+              | 5, 2 |];
