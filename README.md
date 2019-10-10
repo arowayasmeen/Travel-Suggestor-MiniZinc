@@ -6,3 +6,6 @@ There is a list of Places you can visit. To explore each place properly, there i
 
 # Version 2
 Addition of the constraints that certain places cannot be visited on the same day.
+
+# Version 3
+We added a list of Hotels that is generated from a hotel budget. It basically gives us a list of which hotels can the user stay in within the given budget.
